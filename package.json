@@ -1,0 +1,15 @@
+{
+  "name": "jobquery",
+  "version": "1.0.0",
+  "description": "Get notificaitons when entry level jobs pop up",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Bates-White",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^12.5.3"
+  }
+}
