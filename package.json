@@ -5,11 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "node index.js",  
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"debug": "node --inspect-brk index.js"
   },
   "author": "Christian Bates-White",
   "license": "ISC",
   "dependencies": {
-    "got": "^12.5.3"
+    "dotenv": "^16.0.3",
+    "got": "^12.5.3",
+    "nodemailer": "^6.9.1",
+    "sqlite3": "^5.1.4"
   }
 }
