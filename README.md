@@ -16,7 +16,7 @@ Google - Looks explicitely for listings containing Software Engineer II
 4. Run npm start
 
 ## ENV Vars
-TO_ADDRESS={phonenumber}@{carrier-gateway}
+TO_ADDRESS={phone-number}@{carrier-gateway}
 
 MAIL_USER={smtp-user-name}
 
