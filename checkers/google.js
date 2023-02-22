@@ -16,7 +16,7 @@ import * as DB from '../db/sqlite.js';
 import * as Mail from '../util/sendEmail.js';
 
 const jobUrl = 'https://careers.google.com/api/v3/search/?distance=50&q=Software%20Engineer%20II';
-export const getJobs = async(recipient)=> {
+export const run = async(recipient)=> {
 	//get job listings from google api
     let res = await got.get(jobUrl).json();
 	const matcher = /^Software Engineer II[^I]/;
@@ -32,11 +32,10 @@ export const getJobs = async(recipient)=> {
 	//prevent from getting alerted about these jobs again
 	updateDb(filtered);
 	//Send a notification
-	/*
 	prepared.forEach(msg => {
 		Mail.sendMail(recipient, msg);	
-	})
-	*/
+	});
+	return;
 }
 
 //filter for jobs based on title and if they've 

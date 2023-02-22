@@ -5,7 +5,7 @@ dotenv.config();
 const jobs = async() => {
 	console.log("Checking for jobs..");
 	const recipient = process.env.TO_ADDRESS;
-	google.getJobs(recipient);
+	google.run(recipient);
 }
 //Run checks on a timer
 (async function(){

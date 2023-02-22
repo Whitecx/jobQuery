@@ -1,0 +1,4 @@
+.env
+*.db
+*.sw*
+node_modules
