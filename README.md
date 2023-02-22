@@ -3,9 +3,10 @@
 
 ## DESC
 Motivation: Some career pages don't filter entry level jobs well, or keep you updated with relevant positions
+
 Goal: Send users text alerts when an entry level position opens. Support lots of companies!
 
-###### Supported Career Sites:
+## Supported Career Sites:
 Google - Looks explicitely for listings containing Software Engineer II 
 
 ## Install & Run
@@ -16,10 +17,15 @@ Google - Looks explicitely for listings containing Software Engineer II
 
 ## ENV Vars
 TO_ADDRESS=<phonenumber>@<carrier-gateway>
+
 MAIL_USER=<smtp-user-name>
+
 MAIL_PASS=<smtp-password>
+
 MAIL_HOST=<smtp-host>
+
 MAIL_PORT=<smtp-host>
+
 MAIL_FROM=<email-address>
 
 This app [uses email to send SMS messages](https://en.wikipedia.org/wiki/SMS_gateway). To determine the TO_ADDRESS, lookup the sms gateway for your cell service provider.
